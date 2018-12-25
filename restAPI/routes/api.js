@@ -4,7 +4,9 @@ const Event = require('../models/event_table')
 
 //get a list of events from the db
 router.get('/events',function(req,res,next){
-  res.send({type:'GET'})
+  Event.find({}).then(function(events){
+    res.send(events);
+  })
 })
 
 //add a new event to the db
