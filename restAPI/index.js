@@ -9,6 +9,8 @@ const app = express();
 mongoose.connect('mongodb://localhost/dbevents')
 mongoose.Promise = global.Promise
 
+app.use(express.static('public'))
+
 // use body-parser middleware
 app.use(bodyParser.json())
 
