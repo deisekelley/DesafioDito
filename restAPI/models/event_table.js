@@ -8,10 +8,11 @@ const EventSchema = new Schema({
     required:[true, 'Event fild is required']
   },
   timestamp:{
-    type:String
+    type:String,
+    required:[true, 'Timestamp fild is required']
   }
 })
 
-const Event = mongoose.model('event',EventSchema)
+const Event = mongoose.model('event', EventSchema)
 
 module.exports = Event
