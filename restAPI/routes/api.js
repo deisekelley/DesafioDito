@@ -6,7 +6,7 @@ const Event = require('../models/event_table')
 router.get('/events',function(req,res,next){
   Event.find({}).then(function(events){
     res.send(events);
-  })
+  }).catch(next)
 })
 
 //add a new event to the db
