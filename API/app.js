@@ -1,7 +1,10 @@
+const express = require('express')
 var app = require('./config/app_config')
 var db  = require('./config/db_config')
 var User = require('./models/eventos')
 var eventController = require('./controllers/eventController')
+
+app.use(express.static('AutoComplete'));
 
 app.get('/',function(req,res){
 	res.end('Bem-vindo a API de Eventos')
