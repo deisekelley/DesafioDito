@@ -17,6 +17,7 @@ app.get('/eventos',function(req, res){
 	})
 });
 
+
 app.post('/add',function(req, res){
 	var event = req.body.event
 	var timestamp = req.body.timestamp
