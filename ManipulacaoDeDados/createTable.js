@@ -9,8 +9,8 @@ var con = mysql.createConnection({
 
 function createTable(conn){
  
-      const sql = "CREATE TABLE IF NOT EXISTS tabela (\n"+
-                  "tempo varchar(100),\n"+
+      const sql = "CREATE TABLE IF NOT EXISTS bancodedados (\n"+
+                  "tempo VARCHAR(100),\n"+
                   "revenue int,\n"+
                   "transaction_id int NOT NULL,\n"+
                   "product_name varchar(150),\n"+
