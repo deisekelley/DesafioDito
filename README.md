@@ -5,7 +5,8 @@ Para o autocomplete fiz a utilizacao de ajax+jquery para fazer o get e imprimir 
 
 2)Loja Devaneios foi implementada em PHP e mySql, utilizando bootstrap no frontend.
 
-3) Uma implementacao de um menu com JavaScript puro + CSS.
+
+3)Uma implementacao de um menu com JavaScript puro + CSS.
 
 
 
